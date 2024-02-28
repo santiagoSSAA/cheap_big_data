@@ -36,3 +36,9 @@ Sin embargo, no todo el mundo puede contar con un equipo así al alcance de la m
 - Una GPU integrada **Intel Iris Xe Graphics**. 
 
 Así que en este artículo tomaremos estos requerimientos como los mínimos (e incluso veremos si podemos reducirlos todavía más) para el desarrollo de Big data.
+
+## Software de codigo abierto para Big data
+
+Es el momento de empezar a ahondar en lo técnico. Veremos varias tecnologías que te permitirán desde leer macro-archivos de varios Gigabytes, hasta procesar y crear datasets limpios. Empecemos con la primera herramienta:
+
+### 1. HADOOP
