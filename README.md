@@ -66,3 +66,4 @@ Finalmente, asi va a quedar nuestro entorno de trabajo:
 
 Este será nuestro ejercicio:
 
+![Exercise diagram](Images/image_2.png)
