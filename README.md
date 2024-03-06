@@ -1,4 +1,4 @@
-# Aprende a hacer Big Data sin gastar una fortuna: Guía para principiantes
+# Aprende a hacer Big Data sin gastar una fortuna: Python y Cloud
 ##### Por Santiago Sanchez Pulgarín
 
 ---
@@ -7,12 +7,12 @@
 
 1. Introducción
 2. Los verdaderos requisitos minimos de hardware.
-3. Software de codigo abierto para big data
-4. Técnicas de optimización para laptops baratas
-5. Ejemplos de proyectos de Big Data en laptops baratas
+3. Herramientas de trabajo.
+4. Ejercicio.
+5. Conclusiones
 6. Recursos adicionales
 
-## Introducción
+## 1. Introducción
 
 Como desarrollador de software he tenido que enfrentarme a distintos retos a lo largo de mi carrera. El uso de Python como lenguaje de programación es cada vez más y más amplio, y sirve como base para desarrollo web, A.I, crypto, etc.
 
@@ -20,7 +20,7 @@ En este artículo, vamos a ahondar en **Big Data**, un término que, [según ora
 
 Sin embargo, en pleno 2024 opino que las circunstancias han cambiado a favor de los desarrolladores, así que en este artículo te mostraré como puedes hacer Big data en una laptop barata (- $300 USD) utilizando herramientas de código abierto y técnicas de optimización.
 
-## Los verdaderos requisitos minimos de hardware.
+## 2. Los verdaderos requisitos minimos de hardware.
 
 Hewlett-Packard, también conocida como *[HP](https://es.wikipedia.org/wiki/Hewlett-Packard)*, es una compañia multinacional considerada de las lideres en tecnología y creación de equipos de computación. En [este post](https://www.hp.com/us-en/workstations/learning-hub/what-kind-computer-data-science.html) explican lo que, según ellos, son los **REQUISITOS MÍNIMOS QUE DEMANDA LA CIENCIA DE DATOS PARA HACER BIG DATA**. La lista de requerimientos que ellos comparten es clara:
 
@@ -37,8 +37,32 @@ Sin embargo, no todo el mundo puede contar con un equipo así al alcance de la m
 
 Así que en este artículo tomaremos estos requerimientos como los mínimos (e incluso veremos si podemos reducirlos todavía más) para el desarrollo de Big data.
 
-## Software de codigo abierto para Big data
+## 3. Herramientas de trabajo.
 
-Es el momento de empezar a ahondar en lo técnico. Veremos varias tecnologías que te permitirán desde leer macro-archivos de varios Gigabytes, hasta procesar y crear datasets limpios. Empecemos con la primera herramienta:
+Estas son las herramientas que vamos a usar:
 
-### 1. HADOOP
+- Pandas y NumPy
+- Dask
+- Google Colab
+
+### Pandas y NumPy
+
+Tanto [Pandas](https://pandas.pydata.org/pandas-docs/stable/index.html) como [NumPy](https://numpy.org/doc/stable/) son dos librerías de Python popularmente utilizadas en la ciencia de datos. Sirven para manipulación de datos y la computación científica respectivamente. Usaremos estas librerías debido a sus manejos eficientes para las estructuras de datos y los arrays multidimensionales que nos ayudarán a tratar con grandes cantidades de datos.
+
+### Dask
+
+[Dask](https://docs.dask.org/en/stable/) es una librería muy similar en su uso a Pandas y Numpy, con la diferencia que esta enfocada al procesamiento distribuido de datos a gran escala. La usaremos ya que nos interesa su eficiencia, siendo capaz de procesar grandes cantidades de conjuntos de datos.
+
+### Google Colaboratory (Colab)
+
+Para un ultimo caso de uso, usaremos el servicio de [Google Colaboratory](https://colab.research.google.com/) para ejecutar codigo python desde el navegador web. Lo usaremos por su capacidad de acceder de forma gratuita a GPUs y TPUs para el uso de las librerías antes mencionadas.
+
+Finalmente, asi va a quedar nuestro entorno de trabajo:
+
+![Resources use case diagram](Images/image.png)
+
+
+## 4. Ejercicio.
+
+Este será nuestro ejercicio:
+
